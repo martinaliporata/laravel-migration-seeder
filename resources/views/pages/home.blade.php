@@ -4,6 +4,6 @@
 
 @section('main-content')
     <div>
-        Welcome in the homepage, please click on products to see them
+        Welcome in the homepage
     </div>
 @endsection
