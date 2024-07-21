@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\TrainSeederController;
 use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
     // il primo '/trains' è dove l'utente va, [TrainController::class è dove mi porta
 Route::get('/trains', [TrainController::class, 'index']) ->name('trains.index');
+Route::get('/trainsxseeder', [TrainSeederController::class, 'index']) ->name('trainsxseeder.index');
